@@ -36,7 +36,7 @@ const About = () => {
               />
             </div>
             <div className="experience-badge glass-panel">
-              <span className="years">10+</span>
+              <span className="years">2+</span>
               <span className="text">Years<br />Experience</span>
             </div>
           </motion.div>
