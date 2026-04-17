@@ -3,8 +3,10 @@ import { motion } from 'framer-motion';
 import { GraduationCap, Award } from 'lucide-react';
 import doctorimage from "../../assests/images/doctorImage.png"
 import './About.css';
+import { envConfig } from '../../config/config';
 
 const About = () => {
+  const currentYear = new Date()?.getFullYear();
   return (
     <div className="about-page">
       <div className="about-header">
@@ -36,7 +38,7 @@ const About = () => {
               />
             </div>
             <div className="experience-badge glass-panel">
-              <span className="years">2+</span>
+              <span className="years">{currentYear - envConfig.DEGREE_YEAR}+</span>
               <span className="text">Years<br />Experience</span>
             </div>
           </motion.div>
